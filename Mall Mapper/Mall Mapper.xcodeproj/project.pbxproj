@@ -14,6 +14,8 @@
 		702708AA19F2CB99005ADF48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 702708A919F2CB99005ADF48 /* Images.xcassets */; };
 		702708AD19F2CB99005ADF48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702708AB19F2CB99005ADF48 /* LaunchScreen.xib */; };
 		702708B919F2CB99005ADF48 /* Mall_MapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702708B819F2CB99005ADF48 /* Mall_MapperTests.m */; };
+		7029096019F831A400D5B25D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029095F19F831A400D5B25D /* MainMenuViewController.m */; };
+		7029096319F8333800D5B25D /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029096219F8333800D5B25D /* Store.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		702708B219F2CB99005ADF48 /* Mall MapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mall MapperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		702708B719F2CB99005ADF48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		702708B819F2CB99005ADF48 /* Mall_MapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mall_MapperTests.m; sourceTree = "<group>"; };
+		7029095E19F831A400D5B25D /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		7029095F19F831A400D5B25D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		7029096119F8333800D5B25D /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Store.h; path = "Mall Mapper/Store.h"; sourceTree = "<group>"; };
+		7029096219F8333800D5B25D /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Store.m; path = "Mall Mapper/Store.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		7027089019F2CB99005ADF48 = {
 			isa = PBXGroup;
 			children = (
+				7029096119F8333800D5B25D /* Store.h */,
+				7029096219F8333800D5B25D /* Store.m */,
 				7027089B19F2CB99005ADF48 /* Mall Mapper */,
 				702708B519F2CB99005ADF48 /* Mall MapperTests */,
 				7027089A19F2CB99005ADF48 /* Products */,
@@ -89,6 +97,8 @@
 				702708A919F2CB99005ADF48 /* Images.xcassets */,
 				702708AB19F2CB99005ADF48 /* LaunchScreen.xib */,
 				7027089C19F2CB99005ADF48 /* Supporting Files */,
+				7029095E19F831A400D5B25D /* MainMenuViewController.h */,
+				7029095F19F831A400D5B25D /* MainMenuViewController.m */,
 			);
 			path = "Mall Mapper";
 			sourceTree = "<group>";
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7029096019F831A400D5B25D /* MainMenuViewController.m in Sources */,
 				702708A519F2CB99005ADF48 /* ViewController.m in Sources */,
 				702708A219F2CB99005ADF48 /* AppDelegate.m in Sources */,
+				7029096319F8333800D5B25D /* Store.m in Sources */,
 				7027089F19F2CB99005ADF48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +424,7 @@
 				702708BE19F2CB99005ADF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		702708BF19F2CB99005ADF48 /* Build configuration list for PBXNativeTarget "Mall MapperTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				702708C119F2CB99005ADF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
