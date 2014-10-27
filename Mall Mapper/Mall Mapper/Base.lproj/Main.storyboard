@@ -53,6 +53,9 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <segue destination="Mro-j3-EO2" kind="push" id="PV3-i1-Os6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -150,7 +153,105 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6C-P9-lQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489" y="1191"/>
+            <point key="canvasLocation" x="478" y="1343"/>
+        </scene>
+        <!--Macy's-->
+        <scene sceneID="JLk-lb-EDz">
+            <objects>
+                <viewController id="Mro-j3-EO2" customClass="StoreDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mml-Sd-uC8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="macysmap" id="IhF-q3-Z0A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fzw-4Q-6tk">
+                                <rect key="frame" x="16" y="258" width="382" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Deals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3hi-Pf-PkD">
+                                <rect key="frame" x="16" y="316" width="382" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zSk-bq-wBa">
+                                <rect key="frame" x="0.0" y="348" width="414" height="322"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuickDealsText" textLabel="hZT-im-k2F" style="IBUITableViewCellStyleDefault" id="O4G-DK-rXS">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O4G-DK-rXS" id="gJv-px-1Yg">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hZT-im-k2F">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gVX-GG-v1n" kind="push" id="Hs2-pg-hPw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mro-j3-EO2" id="6FJ-lv-ilw"/>
+                                    <outlet property="delegate" destination="Mro-j3-EO2" id="PsW-xy-aW1"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9am to 10pm every day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d2j-oB-fiw">
+                                <rect key="frame" x="16" y="287" width="386" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Macy's" id="HjV-mt-Fkb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="X2w-Ds-fmx">
+                            <connections>
+                                <segue destination="MUF-gI-wCh" kind="push" id="3Tb-do-9DR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5T-EU-OUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="1343"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="4fY-uZ-bDa">
+            <objects>
+                <viewController id="MUF-gI-wCh" customClass="NavigationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fjN-gH-DdD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Navigation" id="Xtd-IM-PhG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="YJv-H7-gGy">
+                            <connections>
+                                <action selector="navigationClosed:" destination="MUF-gI-wCh" id="ml7-KH-sbw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cB-Hd-Nvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="1130"/>
         </scene>
         <!--Directory-->
         <scene sceneID="PAM-Xy-DzI">
@@ -184,6 +285,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="macysmap" width="702" height="528"/>
         <image name="qrcode" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -191,4 +293,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hs2-pg-hPw"/>
+    </inferredMetricsTieBreakers>
 </document>

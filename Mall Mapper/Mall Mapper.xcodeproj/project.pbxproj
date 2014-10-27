@@ -16,6 +16,8 @@
 		702708B919F2CB99005ADF48 /* Mall_MapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702708B819F2CB99005ADF48 /* Mall_MapperTests.m */; };
 		7029096019F831A400D5B25D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029095F19F831A400D5B25D /* MainMenuViewController.m */; };
 		7029096319F8333800D5B25D /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029096219F8333800D5B25D /* Store.m */; };
+		70D54A8919FD6E1500B46EEE /* StoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D54A8819FD6E1500B46EEE /* StoreDetailViewController.m */; };
+		70E1FCE219FED27B00184905 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1FCE119FED27B00184905 /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		7029095F19F831A400D5B25D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		7029096119F8333800D5B25D /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Store.h; path = "Mall Mapper/Store.h"; sourceTree = "<group>"; };
 		7029096219F8333800D5B25D /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Store.m; path = "Mall Mapper/Store.m"; sourceTree = "<group>"; };
+		70D54A8719FD6E1500B46EEE /* StoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreDetailViewController.h; sourceTree = "<group>"; };
+		70D54A8819FD6E1500B46EEE /* StoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailViewController.m; sourceTree = "<group>"; };
+		70E1FCE019FED27B00184905 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		70E1FCE119FED27B00184905 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,10 @@
 				7027089C19F2CB99005ADF48 /* Supporting Files */,
 				7029095E19F831A400D5B25D /* MainMenuViewController.h */,
 				7029095F19F831A400D5B25D /* MainMenuViewController.m */,
+				70D54A8719FD6E1500B46EEE /* StoreDetailViewController.h */,
+				70D54A8819FD6E1500B46EEE /* StoreDetailViewController.m */,
+				70E1FCE019FED27B00184905 /* NavigationViewController.h */,
+				70E1FCE119FED27B00184905 /* NavigationViewController.m */,
 			);
 			path = "Mall Mapper";
 			sourceTree = "<group>";
@@ -231,9 +241,11 @@
 			files = (
 				7029096019F831A400D5B25D /* MainMenuViewController.m in Sources */,
 				702708A519F2CB99005ADF48 /* ViewController.m in Sources */,
+				70E1FCE219FED27B00184905 /* NavigationViewController.m in Sources */,
 				702708A219F2CB99005ADF48 /* AppDelegate.m in Sources */,
 				7029096319F8333800D5B25D /* Store.m in Sources */,
 				7027089F19F2CB99005ADF48 /* main.m in Sources */,
+				70D54A8919FD6E1500B46EEE /* StoreDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
