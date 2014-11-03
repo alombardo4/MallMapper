@@ -256,7 +256,7 @@
         <!--Directory-->
         <scene sceneID="PAM-Xy-DzI">
             <objects>
-                <viewController id="eBE-6t-Koo" sceneMemberID="viewController">
+                <viewController id="eBE-6t-Koo" customClass="DirectoryViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ptL-Qs-eDm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -268,20 +268,92 @@
                                     <segment title="Categories"/>
                                     <segment title="Alphabetical"/>
                                 </segments>
+                                <connections>
+                                    <action selector="viewChanged:" destination="eBE-6t-Koo" eventType="valueChanged" id="1mO-Vq-da3"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qAw-Ye-mP2">
                                 <rect key="frame" x="0.0" y="56" width="414" height="616"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DirectoryCell" textLabel="i0i-iy-MLA" style="IBUITableViewCellStyleDefault" id="CCt-Hj-r4i">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CCt-Hj-r4i" id="qzT-fu-n6o">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="i0i-iy-MLA">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="yTB-cV-jri">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yTB-cV-jri" id="9jL-FU-Kvx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Z7D-wW-iAH">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z7D-wW-iAH" id="1qQ-Ll-IzC">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eBE-6t-Koo" id="xPj-4e-RNq"/>
+                                    <outlet property="delegate" destination="eBE-6t-Koo" id="1dd-El-qiP"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Directory" id="ETc-2w-cuP"/>
+                    <connections>
+                        <outlet property="tableView" destination="qAw-Ye-mP2" id="uam-YR-bbY"/>
+                        <outlet property="viewSwitcher" destination="gMT-HI-lb9" id="BXz-Xd-C4s"/>
+                        <segue destination="Mro-j3-EO2" kind="push" identifier="directoryToDetails" id="euI-bK-OPz"/>
+                        <segue destination="laf-fi-j89" kind="push" identifier="directoryToSubDir" id="3kL-w0-n5Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UDx-jR-kic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="470"/>
+            <point key="canvasLocation" x="988" y="427"/>
+        </scene>
+        <!--Directory-->
+        <scene sceneID="hpz-Sz-aXe">
+            <objects>
+                <tableViewController id="laf-fi-j89" customClass="DirectoryDetailTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3f0-8P-Vs6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="directoryCell" id="qMg-OY-daY">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qMg-OY-daY" id="0gQ-Cv-pHo">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Mro-j3-EO2" kind="push" id="Qdg-nS-zFy"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="laf-fi-j89" id="W4J-ON-xwi"/>
+                            <outlet property="delegate" destination="laf-fi-j89" id="Vyh-wb-Rxx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Directory" id="Zup-lm-7P9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zap-VB-v3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1431" y="343"/>
         </scene>
     </scenes>
     <resources>
@@ -294,6 +366,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Hs2-pg-hPw"/>
+        <segue reference="GLs-mD-5V4"/>
+        <segue reference="Qdg-nS-zFy"/>
     </inferredMetricsTieBreakers>
 </document>

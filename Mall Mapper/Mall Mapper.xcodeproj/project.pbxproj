@@ -16,6 +16,8 @@
 		702708B919F2CB99005ADF48 /* Mall_MapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 702708B819F2CB99005ADF48 /* Mall_MapperTests.m */; };
 		7029096019F831A400D5B25D /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029095F19F831A400D5B25D /* MainMenuViewController.m */; };
 		7029096319F8333800D5B25D /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 7029096219F8333800D5B25D /* Store.m */; };
+		702D9BB71A08059B00DEF17E /* DirectoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702D9BB61A08059B00DEF17E /* DirectoryViewController.m */; };
+		702D9BBA1A080A9D00DEF17E /* DirectoryDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 702D9BB91A080A9D00DEF17E /* DirectoryDetailTableViewController.m */; };
 		70D54A8919FD6E1500B46EEE /* StoreDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D54A8819FD6E1500B46EEE /* StoreDetailViewController.m */; };
 		70E1FCE219FED27B00184905 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E1FCE119FED27B00184905 /* NavigationViewController.m */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,10 @@
 		7029095F19F831A400D5B25D /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
 		7029096119F8333800D5B25D /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Store.h; path = "Mall Mapper/Store.h"; sourceTree = "<group>"; };
 		7029096219F8333800D5B25D /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Store.m; path = "Mall Mapper/Store.m"; sourceTree = "<group>"; };
+		702D9BB51A08059B00DEF17E /* DirectoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryViewController.h; sourceTree = "<group>"; };
+		702D9BB61A08059B00DEF17E /* DirectoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryViewController.m; sourceTree = "<group>"; };
+		702D9BB81A080A9D00DEF17E /* DirectoryDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryDetailTableViewController.h; sourceTree = "<group>"; };
+		702D9BB91A080A9D00DEF17E /* DirectoryDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryDetailTableViewController.m; sourceTree = "<group>"; };
 		70D54A8719FD6E1500B46EEE /* StoreDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreDetailViewController.h; sourceTree = "<group>"; };
 		70D54A8819FD6E1500B46EEE /* StoreDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreDetailViewController.m; sourceTree = "<group>"; };
 		70E1FCE019FED27B00184905 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
@@ -109,6 +115,10 @@
 				70D54A8819FD6E1500B46EEE /* StoreDetailViewController.m */,
 				70E1FCE019FED27B00184905 /* NavigationViewController.h */,
 				70E1FCE119FED27B00184905 /* NavigationViewController.m */,
+				702D9BB51A08059B00DEF17E /* DirectoryViewController.h */,
+				702D9BB61A08059B00DEF17E /* DirectoryViewController.m */,
+				702D9BB81A080A9D00DEF17E /* DirectoryDetailTableViewController.h */,
+				702D9BB91A080A9D00DEF17E /* DirectoryDetailTableViewController.m */,
 			);
 			path = "Mall Mapper";
 			sourceTree = "<group>";
@@ -239,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702D9BB71A08059B00DEF17E /* DirectoryViewController.m in Sources */,
 				7029096019F831A400D5B25D /* MainMenuViewController.m in Sources */,
 				702708A519F2CB99005ADF48 /* ViewController.m in Sources */,
+				702D9BBA1A080A9D00DEF17E /* DirectoryDetailTableViewController.m in Sources */,
 				70E1FCE219FED27B00184905 /* NavigationViewController.m in Sources */,
 				702708A219F2CB99005ADF48 /* AppDelegate.m in Sources */,
 				7029096319F8333800D5B25D /* Store.m in Sources */,
