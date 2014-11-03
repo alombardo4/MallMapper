@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavigationViewController : UIViewController
+@interface NavigationViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 - (IBAction)navigationClosed:(id)sender;
 
 @end
